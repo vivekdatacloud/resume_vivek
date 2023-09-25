@@ -1,0 +1,21 @@
+    <!-- project section start -->
+    {% load static %}
+    <section class="services" id="services" style="background-color:#000000">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="serv-content">
+                {% for x in project_data %}
+                <div class="card">
+                    <div class="box">
+                        <div class="text">{{x.project_title}}</div>
+                        <img src="{{x.project_image.url}}" width="150px">
+                        <p>{{x.project_subtitle}}</p>
+                        <a href="{{x.project_link}}" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                {% endfor %}
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- project section end -->

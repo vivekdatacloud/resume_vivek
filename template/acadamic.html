@@ -1,0 +1,42 @@
+    <!-- academic details start-->
+    {% load static %}
+
+    <section class="services" id="education" style="background-color:#000000">
+        <div class="max-width">
+            <h2 class="title">Academic Details</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-leanpub"></i>
+                        {% for x in acadamics_data %}
+                        <div class="text">{{x.acadamics_title}}</div>
+                        <p>{{x.acadamics_subtitle}}</p>
+                        <p>{{x.acadamics_duration}}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-graduation-cap"></i>
+                        {% for x in acadamics_data %}
+                        <div class="text">{{x.acadamics_title_1}}</div>
+                        <p>{{x.acadamics_subtitle_1}}</p>
+                        <p>{{x.acadamics_duration_1}}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-school"></i>
+                        {% for x in acadamics_data %}
+                        <div class="text">{{x.acadamics_title_2}}</div>
+                        <p>{{x.acadamics_subtitle_2}}</p>
+                        <p>{{x.acadamics_duration_2}}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+ <!-- academic details end -->

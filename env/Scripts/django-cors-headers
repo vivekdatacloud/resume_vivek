@@ -1,0 +1,7 @@
+Uninstalling Django-4.2.5:
+  Would remove:
+    c:\users\vivek\onedrive\desktop\vivektech\web\env\lib\site-packages\django-4.2.5.dist-info\*
+    c:\users\vivek\onedrive\desktop\vivektech\web\env\lib\site-packages\django\*
+    c:\users\vivek\onedrive\desktop\vivektech\web\env\scripts\django-admin.exe
+Proceed (y/n)? Your response ('') was not one of the expected responses: y, n
+Proceed (y/n)? 

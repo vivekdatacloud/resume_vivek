@@ -1,0 +1,29 @@
+    <!-- skills section start -->
+    {% load static %}
+
+    <section class="skills" id="skills" style="background-color:#F8F9FA">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                {% for x in skill_data%}
+                <div class="text">{{x.skill_title}}</div>
+                {% endfor %}
+                {% for x in skill_data%}
+                    <p>{{x.skill_description}}</p>
+                    <a href="{{x.skill_link}}" target="_blank" >Visit My Github</a>
+                </div>
+                {% endfor %}
+                <div class="column right">
+                    {% for x in skill_icon_feed %}
+                    <div class="bars">
+                        <div class="info">
+                            <img style= "width: 90px;" src="{{x.skill_section_image.url}}" alt="Java" width="96" height="96">
+                            <span>{{x.skill_section_title}}</span>
+                        </div>  
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>

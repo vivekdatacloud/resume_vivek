@@ -1,0 +1,39 @@
+{% load static %}
+
+<!-- hero section start -->
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Hello, my name is</div>
+            {% for x in hero %}
+            <div class="text-2">{{x.main_title}}</div>
+            {% endfor %}
+            <div class="text-3">And I'm a <span class="typing"></span></div>
+        </div>
+    </div>
+</section>
+
+<!-- about section start -->
+<section class="about" id="about" style="background-color:#000000">
+    <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+            <div class="column left">
+                {% for x in hero %}
+                <img src="{{x.about_img.url}} " alt="">
+                {% endfor %}
+            </div>
+            <div class="column right">
+                {% for x in hero %}
+                <div class="text">I'm {{x.about_title}} and I'm a <span class="typing-2"></span></div>
+                {% endfor %}
+                {% for x in hero %}
+                <p>{{x.about_text}}</p>
+                {% endfor %}
+                {% for x in hero %}
+                <a href="{{x.resume_link}}" target="_blank">Connect me on Linkedin </a>
+                {% endfor %}    
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,10 @@
+    <!-- footer section start -->
+    {% load static %}
+
+    <footer>
+        {%for x in foot_data %}
+        <span>Created By <a href="{{x.created_by_link}}"> {{x.created_by_name}}</a> | <span class="far fa-copyright"></span> {{x.created_b_year}}. All rights reserved<a href="{{x.created_by_terms}}"> {{x.created_by_terms}}</a> </span>
+        {% endfor %}
+    </footer>
+    <!-- footer section end -->
+

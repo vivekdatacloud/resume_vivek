@@ -1,0 +1,67 @@
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    {% for x in touch_data %}
+                    <p>{{x.text}}</p>
+                    {% endfor %}
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                {% for x in touch_data %}
+                                <div class="sub-title">{{x.get_name}}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                {% for x in touch_data %}
+                                <div class="sub-title">{{x.address}}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                {% for x in touch_data %}
+                                <a class="sub-title" href="mailto:vivekkpatil7@yahoo.com" target="_blank" >{{x.get_email}}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <p>helloo helloo hellooo</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fab fa-medium"></i>
+                            <div class="info">
+                                <a href="https://medium.com/" target="_blank" >Medium</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div class="info">
+                                <a href="https://www.linkedin.com/in/vivekkpatil7/" target="_blank" >  Linkedin</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-github"></i>
+                            <div class="info">
+                                <a href="https://github.com/vivekkpatil7" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

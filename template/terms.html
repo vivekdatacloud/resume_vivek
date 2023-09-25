@@ -1,0 +1,30 @@
+   <!-- contact section start -->
+   <html lang="en">
+    {% include 'base.html' %}
+    {% load static %}
+    <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <nav class="navbar" style="background-color:#14213D;">
+            <div class="max-width">
+                <div class="logo" ><a href="{% url 'home' %}">Vivek<span> P.</span></a></div>
+                <ul class="menu">
+                    <li><a href="{% url 'home' %}" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#services" class="menu-btn">Projects</a></li>
+                    <li><a href="#education" class="menu-btn">Education</a></li>
+                    <li><a href="{% url 'contactform' %}" class="menu-btn">Contact</a></li>
+                    <li><a class="menu-btn" href="https://bit.ly/vivekpcv" target="_blank" >Resume</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    {% include 'footer.html' %}
+    <script src="{% static 'script.js'%}"></script>
+    </body>
+    </html>
+    <!-- contact section end -->
